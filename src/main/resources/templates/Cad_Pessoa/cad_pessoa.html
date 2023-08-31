@@ -6,8 +6,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/validadorCPF.js"></script>
     <link rel="icon" href="icone.svg">
     <link rel="stylesheet" href="css/teste.css">
@@ -17,57 +19,57 @@
 <body>
 <div class="container">
     <div id="errorMessage" th:utext="${mensagem}"></div>
-    <h1 class="mt-5">Cadastro</h1>
-<!--    <form action="/cadastro" method="post">-->
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="sp_nome"><i class="fa-solid fa-user"></i></span>
-                    <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome"
-                           aria-label="Nome" th:value="${nome}" aria-describedby="sp_nome">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="sp_cpf"><i class="fa-solid fa-id-card"></i></span>
-                    <input id="cpf" name="cpf" type="text" class="form-control" placeholder="CPF"
-                           aria-label="cpf" th:value="${cpf}" aria-describedby="sp_cpf">
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="sp_email"><i class="fa-solid fa-envelope"></i></span>
-                    <input id="email" name="email" type="text" class="form-control" placeholder="E-mail"
-                           aria-label="email" th:value="${email}" aria-describedby="sp_email">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="sp_telefone"><i class="fa-solid fa-phone"></i></span>
-                    <input id="telefone" name="telefone" type="text" class="form-control" placeholder="Telefone"
-                           aria-label="telefone" th:value="${telefone}" aria-describedby="sp_telefone">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="sp_senha"><i class="fa-solid fa-key"></i></span>
-                    <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha"
-                           aria-label="senha" th:value="${senha}" aria-describedby="sp_senha">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="sp_confSenha"><i class="fa-solid fa-key"></i></span>
-                    <input id="confSenha" name="confSenha" type="password" class="form-control"
-                           placeholder="Confirme a Senha"
-                           aria-label="confSenha" aria-describedby="sp_confSenha">
-                </div>
-            </div>
-            <div class="col-sm-12 text-end">
-                <button id="btnEnviar" class="btn btn-primary">Cadastrar</button>
+    <h1 class="mt-5 text-center">Cadastro</h1>
+    <!--    <form action="/cadastro" method="post">-->
+    <div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="sp_nome"><i class="fa-solid fa-user"></i></span>
+            <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome"
+                   aria-label="Nome" th:value="${nome}" aria-describedby="sp_nome">
+        </div>
+    </div>
+    <div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="sp_cpf"><i class="fa-solid fa-id-card"></i></span>
+            <input id="cpf" name="cpf" type="text" class="form-control" placeholder="CPF"
+                   aria-label="cpf" th:value="${cpf}" aria-describedby="sp_cpf">
+        </div>
+    </div>
+    <div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="sp_email"><i class="fa-solid fa-envelope"></i></span>
+            <input id="email" name="email" type="text" class="form-control" placeholder="E-mail"
+                   aria-label="email" th:value="${email}" aria-describedby="sp_email">
+        </div>
+    </div>
+    <div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="sp_telefone"><i class="fa-solid fa-phone"></i></span>
+            <input id="telefone" name="telefone" type="text" class="form-control" placeholder="Telefone"
+                   aria-label="telefone" th:value="${telefone}" aria-describedby="sp_telefone">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="sp_senha"><i class="fa-solid fa-key"></i></span>
+                <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha"
+                       aria-label="senha" th:value="${senha}" aria-describedby="sp_senha">
             </div>
         </div>
-<!--    </form>-->
+        <div class="col-sm-6">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="sp_confSenha"><i class="fa-solid fa-key"></i></span>
+                <input id="confSenha" name="confSenha" type="password" class="form-control"
+                       placeholder="Confirme a Senha"
+                       aria-label="confSenha" aria-describedby="sp_confSenha">
+            </div>
+        </div>
+        <div class="col-sm-12 text-end">
+            <button id="btnEnviar" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </div>
+    <!--    </form>-->
 </div>
 
 <script type="text/javascript">
@@ -92,24 +94,24 @@
 		$("#errorMessage").text("");
 		if(!validarCPF(cpf)){
 			podeEnviar = false;
-			$("#errorMessage").append('CPF Inválido!');
+			$("#errorMessage").append('CPF Inválido!<br/>');
 		}
 		if(campoVazio(nome)){
 			podeEnviar = false;
-			$("#errorMessage").append('O nome precisa ser preenchido!');
+			$("#errorMessage").append('O nome precisa ser preenchido!<br/>');
 		}
 		if(campoVazio(email) && campoVazio(telefone)){
 			podeEnviar = false;
-			$("#errorMessage").append('O e-Mail ou telefone precisa ser preenchido!');
+			$("#errorMessage").append('O e-Mail ou telefone precisa ser preenchido!<br/>');
 		}
 		if(campoVazio(senha) || senha != confSenha){
 			podeEnviar = false;
-			$("#errorMessage").append('A senha precisa ser preenchida e igual a confirmação de senha!');
+			$("#errorMessage").append('A senha precisa ser preenchida e igual a confirmação de senha!<br/>');
 		}
 		if(podeEnviar){
 			$.ajax({
-			    type: "POST",// Tipo da requisição
-			    url: "/", // Caminho para envio da requisição
+			    type: "POST",
+			    url: "/cadastro",
 			    data: {
 			        cpf:cpf,
 					nome:nome,
@@ -119,16 +121,22 @@
 					confSenha:confSenha
 			    },
 			    success: function (data) {
-			        alert("Deu bom!");
+			        if(data.status == false){
+			       $("#errorMessage").text("DEU RUIM CARAIOOO");
+			        }else{
+			        $("#errorMessage").text("FUNUNCIOOOOO CARAIOOOO");
+			        }
 			    },
 			    error: function () {
-			        alert("Deu Ruim!");
+			        alert("faio na comunication ae bro");
 			    }
 			});
 		}
 	}
 
 	$("#btnEnviar").click(validaEnvio);
+
+
 </script>
 </body>
 
