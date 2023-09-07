@@ -48,8 +48,7 @@ public class C_Pessoa {
                                @RequestParam("telefone") String telefone,
                                @RequestParam("email") String email,
                                @RequestParam("senha") String senha,
-                               @RequestParam("confSenha") String confSenha,
-                               RedirectAttributes redirectAttributes){
+                               @RequestParam("confsenha") String confSenha){
         M_Resposta m_resposta = S_Pessoa.cadastrarPessoa(nome,cpf,email,telefone,senha, confSenha);
         return m_resposta;
     }
